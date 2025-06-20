@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cycling & extras
+title: Cycling Workouts & stuff
 permalink: /cycling/
 ---
 
