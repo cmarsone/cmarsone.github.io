@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Le dimanche dans l'octave du Saint-Sacrement
+author: Clément
 ---
 
 Durant la semaine de la Fête-Dieu, la liturgie de ce dimanche, qui est plus ancienne de quelques siècles, vient apporter une note légèrement différente.
