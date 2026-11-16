@@ -6,7 +6,7 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description:
-  High Performance Computing Engineer
+  Ingénieur en calcul haute performance à Paris. Notes et projets autour du HPC, de l’informatique quantique et des sciences.
 
 # Build settings
 
@@ -19,6 +19,7 @@ plugins:
 # Theme-specific settings
 
 minima:
+  skin: classic
   # Minima date format.
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
   #
@@ -48,6 +49,12 @@ minima:
 #
 # header_pages:
 #   - about.md
+
+header_pages:
+  - about.md
+  - cycling.md
+
+lang: fr
 
 # Set to `true` to show excerpts on the homepage.
 #

@@ -1,7 +1,77 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
+
+:root {
+  --ink: #18251f;
+  --muted: #68766e;
+  --line: #e2e9e3;
+  --paper: #fbfcfa;
+  --accent: #286b50;
+  --soft: #f0f5f0;
+}
+
+html { scroll-behavior: smooth; }
+body { color: var(--ink); background: var(--paper); font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: -0.01em; }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: #174a35; }
+.wrapper { max-width: 1080px; padding-right: 28px; padding-left: 28px; }
+
+.site-header { min-height: 76px; border: 0; border-bottom: 1px solid var(--line); background: rgba(251,252,250,.94); }
+.site-header .wrapper { display: flex; min-height: 76px; align-items: center; justify-content: space-between; }
+.site-title { color: var(--ink); font-size: 17px; font-weight: 650; letter-spacing: -.04em; }
+.site-nav { line-height: 1.5; }
+.site-nav .page-link { color: var(--muted); font-size: 13px; font-weight: 550; }
+.site-nav .page-link:hover { color: var(--accent); }
+.page-content { padding: 0 0 72px; }
+.page-content > .wrapper { max-width: 960px; }
+.site-footer { border-top: 1px solid var(--line); padding: 28px 0; }
+.footer-col-wrapper { color: var(--muted); font-size: 13px; }
+
+.home { padding-top: 0; }
+.home > .page-heading { display: none; }
+.intro { max-width: 770px; padding: 94px 0 78px; }
+.eyebrow, .card-index { color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.intro h1 { margin: 19px 0 20px; font-size: clamp(42px, 7vw, 68px); font-weight: 620; letter-spacing: -.065em; line-height: 1.03; }
+.intro-lead { max-width: 650px; margin: 0; color: #59675f; font-size: clamp(18px, 2.2vw, 22px); line-height: 1.65; }
+.intro-links { display: flex; align-items: center; gap: 26px; margin-top: 30px; font-size: 14px; }
+.button-link { display: inline-flex; gap: 16px; align-items: center; border-radius: 4px; padding: 12px 16px; color: white; background: var(--accent); font-weight: 600; text-decoration: none; }
+.button-link:hover { color: white; background: #1d563d; }
+.text-link { color: var(--ink); text-decoration-color: #aab8ae; }
+.focus-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.focus-card { min-height: 220px; padding: 25px 26px 25px 0; }
+.focus-card + .focus-card { border-left: 1px solid var(--line); padding-left: 26px; }
+.focus-card h2 { margin: 20px 0 10px; font-size: 19px; font-weight: 620; letter-spacing: -.035em; }
+.focus-card p { margin-bottom: 12px; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.focus-card a { font-size: 13px; font-weight: 600; }
+
+.page-heading { margin: 56px 0 28px; font-size: 42px; font-weight: 620; letter-spacing: -.055em; }
+.post-list { margin-left: 0; list-style: none; }
+.post-list > li { margin-bottom: 0; border-top: 1px solid var(--line); padding: 20px 0; }
+.post-meta { color: var(--muted); font-size: 12px; }
+.post-list h3 { margin: 5px 0 0; font-size: 19px; letter-spacing: -.02em; }
+.post-link { color: var(--ink); }
+.post-link:hover { color: var(--accent); text-decoration: none; }
+.post-header { margin: 56px 0 32px; }
+.post-title { font-size: clamp(34px, 6vw, 52px); font-weight: 620; letter-spacing: -.055em; line-height: 1.08; }
+.post-content, .page-content .post-content { color: #38473e; font-size: 16px; line-height: 1.8; }
+.post-content h2, .post-content h3 { color: var(--ink); font-weight: 620; letter-spacing: -.03em; }
+.post-content img { border-radius: 5px; }
+
+.page-content .about-content { max-width: 720px; }
+.page-content h2 { letter-spacing: -.035em; }
+.page-content iframe { max-width: 100%; border: 1px solid var(--line); border-radius: 5px; }
+
+@media (max-width: 700px) {
+  .wrapper { padding-right: 21px; padding-left: 21px; }
+  .intro { padding: 68px 0 54px; }
+  .focus-grid { grid-template-columns: 1fr; }
+  .focus-card, .focus-card + .focus-card { min-height: 0; border-left: 0; border-top: 1px solid var(--line); padding: 22px 0; }
+  .focus-card:first-child { border-top: 0; }
+  .focus-card h2 { margin-top: 12px; }
+  .page-heading { margin-top: 40px; font-size: 35px; }
+  .site-nav .page-link { padding: 8px; }
+}

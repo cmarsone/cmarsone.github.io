@@ -1,17 +1,21 @@
 ---
-layout: about
-title: About
+layout: page
+title: À propos
 permalink: /About/
 ---
 
-### Who am I ?
+Je suis **Clément Marsone**, ingénieur en calcul haute performance à Paris. Je m’intéresse aux systèmes qui rendent possibles les calculs scientifiques à grande échelle, ainsi qu’aux idées qui les relient aux mathématiques et à la physique.
 
-Hi everyone! I'm currently living in Paris & working for the Atomic Energy Commission (CEA) in France. My fields of interest are mainly Quantum Computing & High Performance Computing (HPC). Before my graduation in Computer Science at Université Paris-Saclay, I did a double bachelor in Maths & Physics & I also spend some gap years to grow in maturity by making better reflections on myself, developing many soft skills & discovering other horizons. Finally, I answered to me spiritual questions about the goal of the life...
+## Parcours et sujets
 
-### GitHub description
+Après une double licence en mathématiques et en physique, j’ai étudié l’informatique à l’Université Paris-Saclay. Aujourd’hui, mes sujets de travail et d’apprentissage comprennent la programmation CPU/GPU, le calcul parallèle et l’informatique quantique.
 
-- 👋 Hi, I’m Clément and I'm 25 years old.
-- 👀 I’m interested in Road Cycling, Sacred Music & Opera, Philosophy...
-- 🌱 I’m currently learning Quantum Computing & CPU/GPU Programming for HPC
-- 💞️ I’m looking to collaborate on ... some projects related to my hobbies !
-- 📫 How to reach me [LinkedIn](https://www.linkedin.com/in/clement-marsone/) or [Email](mailto:clement.marsone@universite-paris-saclay.fr)
+Sur ce site, je publie des notes de lecture et des explications sur les thèmes que j’explore : optimisation, algorithmes, systèmes distribués, données et physique.
+
+## En dehors du travail
+
+Je pratique le vélo sur route et j’aime la musique sacrée, l’opéra et la philosophie.
+
+## Me contacter
+
+[LinkedIn](https://www.linkedin.com/in/clement-marsone/) · [{{ site.author.email }}](mailto:{{ site.author.email }})
